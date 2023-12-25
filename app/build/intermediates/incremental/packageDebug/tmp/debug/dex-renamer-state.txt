@@ -1,0 +1,4 @@
+#Tue Jan 10 20:18:06 IST 2023
+base.0=E\:\\FaceDetection 2\\FaceDetectionLatest\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
+renamed.0=classes.dex
+path.0=classes.dex

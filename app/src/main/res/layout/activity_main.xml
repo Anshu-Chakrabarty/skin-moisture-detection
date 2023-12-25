@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/forheadIv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitStart"
+        android:elevation="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <!--Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/button_text"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        /-->
+    <!--Button
+        android:id="@+id/button_text"
+        android:text="@string/find_text_button"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/button_face"
+        app:layout_constraintBottom_toBottomOf="parent"/-->
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="412dp"
+        android:layout_height="525dp"
+        android:contentDescription="@string/select_image_for_text_recognition"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:srcCompat="@drawable/img" />
+
+    <Button
+        android:id="@+id/button_face"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/button"
+        android:text="@string/find_face_contour_button"
+        android:textColor="#050002"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_camera"
+        android:layout_width="120dp"
+        android:layout_height="55dp"
+        android:background="@drawable/button"
+        android:text="camera"
+        android:textColor="#050100"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.958" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="404dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="4dp"
+        android:paddingStart="25dp"
+        android:text="SKIN  DETECTOR"
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/image_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/forheadIv"
+        app:layout_constraintVertical_bias="0.492" />
+    <!-- app:layout_constraintLeft_toRightOf="@id/button_text"-->
+    <!--tools:ignore="UnknownId" -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
